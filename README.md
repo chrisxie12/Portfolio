@@ -1,46 +1,36 @@
-# Personal Portfolio Website
+# Christian Twum Gyan — Portfolio
 
-Welcome to my personal portfolio website repository. This project showcases my skills, projects, and experience in computer programming and technical support engineering.
+My personal portfolio site. I'm a student developer at BYU Pathway Worldwide, based in Ghana, building software for schools and businesses.
 
-## About Me
+**Live:** https://chrisxie12.github.io/Portfolio/
 
-I am a computer programming and technical support engineering student at BYU PathwayConnect. I am passionate about using technology to solve real-world problems and create meaningful solutions for communities.
+## Featured work
 
-## Portfolio Features
+- **[SchoolOS](https://www.getschoolos.me/)**: multi-tenant school management platform for African schools (React, Express, Supabase)
+- **[Vision 61 Studios](https://vision61studios.online)**: my digital agency for Ghanaian businesses
+- **[Besago Ventures](https://chrisxie12.github.io/besago-ventures/)**: client website for a Kasoa company
+- **UNIFY Mobile**: Flutter student community app (in development)
+- **Faithlink**: faith-based community app (in development)
+- **CampusX**: campus marketplace for Ghanaian students (in development)
 
-- About Me section
-- Skills and technical expertise
-- Featured projects
-- Contact information
-- Clean and responsive design
+## Built with
 
-## Technologies Used
+Plain HTML, CSS and JavaScript. No build step.
 
-- HTML
-- CSS
-- JavaScript
+```
+index.html
+css/style.css
+js/main.js
+```
 
-## Projects Highlighted
+## Run locally
 
-Some projects included in my portfolio:
-
-- Personal Website
-- Technical Support Guide
-- Community Technology Initiative
-
-## Live Website
-
-You can view the live portfolio here:
-
-[View Portfolio](https://yourusername.github.io/portfolio)
-
-## Installation
-
-If you want to run this project locally:
-
-1. Clone the repository
-2. Open the project folder
-3. Open `index.html` in your browser
+Open `index.html` in a browser, or:
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+npx serve .
+```
+
+## Deploy
+
+Settings → Pages → Deploy from branch → `main` / root.
