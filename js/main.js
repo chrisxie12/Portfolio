@@ -88,8 +88,16 @@ const form = document.querySelector(".form");
 if (form) {
   const status = form.querySelector(".form__status");
   form.addEventListener("submit", async (e) => {
-    if (form.action.includes("YOUR_FORM_ID")) return; // not set up yet
     e.preventDefault();
+    // Until Formspree is set up, open the visitor's email app with the message filled in
+    if (form.action.includes("YOUR_FORM_ID")) {
+      const d = new FormData(form);
+      const subject = encodeURIComponent(`Project enquiry from ${d.get("name")}`);
+      const body = encodeURIComponent(`${d.get("message")}\n\nName: ${d.get("name")}\nContact: ${d.get("contact")}`);
+      window.location.href = `mailto:twumgyanchristian2@gmail.com?subject=${subject}&body=${body}`;
+      status.textContent = "Opening your email app…";
+      return;
+    }
     const button = form.querySelector("button");
     button.disabled = true;
     status.textContent = "Sending…";
